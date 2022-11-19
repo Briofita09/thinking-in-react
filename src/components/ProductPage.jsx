@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 
 export default function ProductPage() {
   const [products] = useState(data);
-  const [productsFiltred, setProductsFiltred] = useState(data);
+  const [productsFiltred, setProductsFiltred] = useState(products);
 
   function searchProduct(p) {
     const filteredProducts = products.filter((product) => {
