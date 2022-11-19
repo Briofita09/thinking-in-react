@@ -11,7 +11,7 @@ export default function ProductPage() {
     const filteredProducts = products.filter((product) => {
       return product.name.toLowerCase().includes(p.toLowerCase());
     });
-    setProductsFiltred([...filteredProducts]);
+    setProductsFiltred(filteredProducts);
   }
   return (
     <>
